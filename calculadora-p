@@ -1,0 +1,36 @@
+Algoritmo switch_o_segun
+	Definir A,B,C Como Real;
+	Definir OPC como texto;
+	Definir opc_mientras como texto;
+	opc_mientras ="SI";
+	
+	Mientras (opc_mientras = "SI")
+		//esto quiero que se repita
+		Escribir "Selecciona una opcion";
+		Escribir "Teclea A, para suma";
+		Escribir "Teclea B, para resta";
+		Leer OPC;
+		
+		Escribir "Ingresa el valor 1";
+		Leer B;
+		Escribir "Ingresa el valor 2";
+		Leer C;
+		
+		
+		segun OPC hacer
+			caso "A": 
+				A= B+C;
+				Escribir "El resultado de la suma es: ", A;
+			Caso "B":
+				A = B-C;
+				Escribir "El resultado de la resta es: " , A;
+			De Otro Modo:
+				Escribir "Opcion Incorrecta Revisa el menu";
+	FinSegun
+	
+	Escribir "!Madre mia Willy¡, quieres ver un tornado otra vez,  pregunta";
+	Leer opc_mientras;
+	
+	FinMientras
+	
+FinAlgoritmo
